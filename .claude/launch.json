@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aiflow",
+      "url": "http://127.0.0.1:8765",
+      "port": 8765
+    },
+    {
+      "name": "aiflow (без монитора)",
+      "runtimeExecutable": "C:\\Users\\Winuser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "runtimeArgs": [
+        "C:\\Users\\Winuser\\.claude\\plugins\\cache\\aiflow-local\\aiflow\\0.1.6\\scripts\\aiflow.py",
+        "ui",
+        "--port",
+        "8765"
+      ],
+      "port": 8765,
+      "autoPort": false
+    }
+  ]
+}
