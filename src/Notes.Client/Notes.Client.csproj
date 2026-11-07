@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Notes.Client</PackageId>
+    <Description>Typed HttpClient for the Notes HTTP API.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Notes.Contracts\Notes.Contracts.csproj" />
+  </ItemGroup>
+</Project>

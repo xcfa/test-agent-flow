@@ -1,0 +1,12 @@
+bin/
+obj/
+artifacts/
+TestResults/
+*.user
+.vs/
+.idea/
+
+node_modules/
+dist/
+coverage/
+*.sarif

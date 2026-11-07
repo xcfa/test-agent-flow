@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Notes.Contracts</PackageId>
+    <Description>DTOs for the Notes HTTP API.</Description>
+  </PropertyGroup>
+</Project>

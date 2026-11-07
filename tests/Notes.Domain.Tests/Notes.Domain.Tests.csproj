@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Notes.Domain\Notes.Domain.csproj" />
+  </ItemGroup>
+</Project>

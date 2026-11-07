@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+    <ProjectReference Include="..\..\src\Notes.Api\Notes.Api.csproj" />
+    <ProjectReference Include="..\..\src\Notes.Client\Notes.Client.csproj" />
+  </ItemGroup>
+</Project>
