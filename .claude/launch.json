@@ -10,7 +10,7 @@
       "name": "aiflow (без монитора)",
       "runtimeExecutable": "C:\\Users\\Winuser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
       "runtimeArgs": [
-        "C:\\Users\\Winuser\\.claude\\plugins\\cache\\aiflow-local\\aiflow\\0.1.6\\scripts\\aiflow.py",
+        "C:\\Users\\Winuser\\.claude\\plugins\\cache\\aiflow-local\\aiflow\\0.1.7\\scripts\\aiflow.py",
         "ui",
         "--port",
         "8765"
