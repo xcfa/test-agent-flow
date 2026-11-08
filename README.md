@@ -9,7 +9,8 @@ sandbox for multi-agent workflows. Little code, many projects, full CI.
 | --- | --- |
 | `src/Notes.Domain` | `Note` entity and its invariants |
 | `src/Notes.Application` | `NoteService`, `INoteRepository` |
-| `src/Notes.Infrastructure` | In-memory repository, DI registration |
+| `src/Notes.Infrastructure` | In-memory and EF Core repositories, DI registration |
+| `src/Notes.Migrations.*` | EF Core migrations per provider (SQLite, SQL Server, PostgreSQL) |
 | `src/Notes.Contracts` | HTTP DTOs — **NuGet package** |
 | `src/Notes.Client` | Typed `HttpClient` — **NuGet package** |
 | `src/Notes.Api` | Minimal API (`/api/notes`, `/health`) — **container image** |
@@ -24,7 +25,8 @@ dotnet run --project src/Notes.Api        # http://localhost:5080
 cd web && npm ci && npm run build -w @xcfa/notes-api-client && npm run dev -w notes-web
 ```
 
-Vite proxies `/api` to the API.
+Vite proxies `/api` to the API. The `http` launch profile stores data in SQLite (`notes.db`);
+without it the API uses in-memory storage. Other databases: see [docs/database.md](docs/database.md).
 
 ## Checks
 

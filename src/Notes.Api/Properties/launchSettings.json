@@ -5,7 +5,10 @@
       "launchBrowser": false,
       "applicationUrl": "http://localhost:5080",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Database__Provider": "Sqlite",
+        "Database__ConnectionString": "Data Source=notes.db",
+        "Database__MigrateOnStartup": "true"
       }
     }
   }

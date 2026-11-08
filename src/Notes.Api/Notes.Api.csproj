@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
     <ProjectReference Include="..\Notes.Contracts\Notes.Contracts.csproj" />
     <ProjectReference Include="..\Notes.Infrastructure\Notes.Infrastructure.csproj" />
+    <ProjectReference Include="..\Notes.Migrations.PostgreSql\Notes.Migrations.PostgreSql.csproj" />
+    <ProjectReference Include="..\Notes.Migrations.Sqlite\Notes.Migrations.Sqlite.csproj" />
+    <ProjectReference Include="..\Notes.Migrations.SqlServer\Notes.Migrations.SqlServer.csproj" />
   </ItemGroup>
 </Project>

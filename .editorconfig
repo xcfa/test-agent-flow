@@ -35,3 +35,6 @@ dotnet_naming_style.underscore_camel.capitalization = camel_case
 
 # Library code doesn't need ConfigureAwait in an ASP.NET Core app.
 dotnet_diagnostic.CA2007.severity = none
+
+[src/Notes.Migrations.*/Migrations/*.cs]
+generated_code = true

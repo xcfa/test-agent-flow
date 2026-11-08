@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Testcontainers.MsSql" />
+    <PackageReference Include="Testcontainers.PostgreSql" />
+    <PackageReference Include="Xunit.SkippableFact" />
+    <ProjectReference Include="..\..\src\Notes.Infrastructure\Notes.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Notes.Migrations.PostgreSql\Notes.Migrations.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\src\Notes.Migrations.Sqlite\Notes.Migrations.Sqlite.csproj" />
+    <ProjectReference Include="..\..\src\Notes.Migrations.SqlServer\Notes.Migrations.SqlServer.csproj" />
+  </ItemGroup>
+</Project>

@@ -6,6 +6,7 @@ RUN dotnet publish src/Notes.Api/Notes.Api.csproj -c Release -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
 COPY --from=build /app .
+RUN mkdir -p /data && chown $APP_UID /data
 USER $APP_UID
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "Notes.Api.dll"]

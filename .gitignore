@@ -12,3 +12,7 @@ coverage/
 *.sarif
 runs/
 .claude/worktrees/
+
+*.db
+*.db-shm
+*.db-wal

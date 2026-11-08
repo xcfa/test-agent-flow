@@ -7,6 +7,7 @@ builder.Services.AddProblemDetails();
 builder.Services.AddNotes();
 
 var app = builder.Build();
+await app.Services.InitializeNotesDatabaseAsync();
 
 app.UseExceptionHandler();
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
