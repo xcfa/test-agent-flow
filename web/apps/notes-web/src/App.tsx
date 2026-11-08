@@ -1,5 +1,6 @@
 import type { Note, NotesClient } from '@xcfa/notes-api-client';
 import { type FormEvent, useEffect, useState } from 'react';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 export function App({ client }: { client: NotesClient }) {
   const [notes, setNotes] = useState<Note[]>([]);
@@ -31,7 +32,10 @@ export function App({ client }: { client: NotesClient }) {
 
   return (
     <main>
-      <h1>Notes</h1>
+      <header>
+        <h1>Notes</h1>
+        <ThemeSwitcher />
+      </header>
       <form onSubmit={handleSubmit}>
         <input aria-label="Title" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
         <textarea aria-label="Body" placeholder="Body" value={body} onChange={(e) => setBody(e.target.value)} />

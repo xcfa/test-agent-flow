@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes</title>
+    <script>
+      // Синхронизировать с src/theme.ts (THEMES, THEME_STORAGE_KEY).
+      try {
+        var t = localStorage.getItem('notes-web:theme');
+        if (t === 'light' || t === 'dark' || t === 'sepia') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
